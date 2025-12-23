@@ -1,3 +1,7 @@
+if os.target() ~= "windows" then
+    return
+end
+
 project "curl"
     kind "StaticLib"
     language "C"
